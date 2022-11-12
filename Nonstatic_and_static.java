@@ -38,11 +38,13 @@ public class Nonstatic_and_static {
         //end of body
     }
         public  int SetArea()
+            //Formula of getting the area of a triangle
         {
             Trianglearea =  Trianglebase* Triangleheight/2;
             return Rectanglearea;
         }
         public static void outputArea()
+            //getting output
         {
        System.out.println("The area of a triangle is"  +Trianglearea);
 }
