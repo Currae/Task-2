@@ -9,7 +9,7 @@ package unit.average_marks;
 
 /**
  *
- * @author Magdalyne
+ * @author Magdaline
  */
 import java.util.Scanner;
 public class Average_marks {
