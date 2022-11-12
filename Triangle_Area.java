@@ -19,17 +19,16 @@ public class Triangle_Area {
 }
     public static void main(String[] args) {
        Scanner s= new Scanner(System.in);
-        
+        //Getting the base of the triangle
       System.out.println("Enter the base of the Triangle:");
-   
-      long b= s.nextLong();
- 
+       long b= s.nextLong();
+     
+      //Getting the height of the triangle
       System.out.println("Enter the height of the Triangle:");
+      long h= s.nextLong();
  
-          long h= s.nextLong();
- 
-          Triangle_Area A1=new Triangle_Area(b,h);
-      
+      Triangle_Area A1=new Triangle_Area(b,h);
+      //Getting the Area
       System.out.println("Area of Triangle is: " + A1.area);      
    }
 }
