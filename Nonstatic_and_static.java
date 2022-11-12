@@ -12,59 +12,42 @@ import java.util.Scanner;
  * @author Magdaline
  */
 public class Nonstatic_and_static {
-    int Rectanglewidth,Rectanglelength;
-      static int Rectanglearea;
+    int  Trianglebase, Triangleheight;
+      static int  Trianglearea;
     //Main Method
     public static void main(String[] args) {
-        Rectangle Rectangle1= new Rectangle();
-        Rectangle1.getInput();
-        Rectangle1.SetArea();
-        Rectangle1.outputArea();
+        Triangletangle Rectangle1= new  Triangle();
+         Triangle1.getInput();
+         Triangle1.SetArea();
+         Triangle1.outputArea();
 
     /**
      *
      */
     public void getInput()
     {
-        //
+        //start body
+        
         Scanner sc = new Scanner(System.in);
+        //user should enter the base of the triangle
         System.out.println("Enter the base of the Triangle:");
-        Rectanglewidth = sc.nextInt();
+       Trianglebase = sc.nextInt();
+        //user should enter the height of the triangle
          System.out.println("Enter the height of the Triangle:");
-        Rectanglelength= sc.nextInt();
-        //
+        Triangleheight= sc.nextInt();
+        //end of body
     }
         public  int SetArea()
         {
-            Rectanglearea = Rectanglewidth*Rectanglelength;
+            Trianglearea =  Trianglebase* Triangleheight/2;
             return Rectanglearea;
         }
         public static void outputArea()
         {
-       System.out.println("The area of a triangle is" +Rectanglearea);
+       System.out.println("The area of a triangle is"  +Trianglearea);
 }
 
-    private static class Rectangle {
-
-        public Rectangle() {
-        }
-
-        private void outputArea() {
-            throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-        }
-
-        private void SetArea() {
-            throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-        }
-
-        private void getInput() {
-            throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-        }
-
-       
     }
 }
-    
-
     
 
