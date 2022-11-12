@@ -15,6 +15,7 @@ public class MethodsInJava {
 
     public static void main(String[] args) {
         int n1,n2,n3;
+        //declaring variables
          Scanner input = new Scanner(System.in);
          //ask user to enter the numbers
            System.out.println("Enter the number 1");
